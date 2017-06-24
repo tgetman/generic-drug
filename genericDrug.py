@@ -12,4 +12,6 @@ def search (brandName):
 
 	genericName = genericPage.title
 	print(genericName)
+	
+search(brandName)
 
