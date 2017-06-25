@@ -19,14 +19,17 @@ def genericDrug():
 	
 	summarytext = wikipedia.summary(genericPage)
 
+
 	if summarytext.count("drug") >= 1 :
 		response(genericPage)
 		error = 0
 	else:
 		error = 1
 		print("an error occured, please try again")	
-while True:		
-	genericDrug()
+	while True:		
+		genericDrug()
+	
+genericDrug()
 
 
 
